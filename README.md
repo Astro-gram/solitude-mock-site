@@ -1,24 +1,22 @@
-# modern-mock-site
+# Solitude
+![Logo](https://raw.githubusercontent.com/Astro-gram/solitude-mock-site/ddfa375778d33f9fd3ed4b6dce24e484f70f9c17/public/logo.png)
 
-## Project setup
-```
-npm install
+## Project Download And Run
+
+```bash
+git clone https://github.com/Astro-gram/solitude-mock-site.git
 ```
 
-### Compiles and hot-reloads for development
-```
+### Run locally with Vue.js
+
+```bash
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Run the built version from the ./build directory
 
-### Lints and fixes files
+```js
+app.get("/", (req, res) => {
+	res.sendFile("./build/index.html");
+});
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
