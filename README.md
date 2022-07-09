@@ -16,6 +16,8 @@ npm run serve
 ### Run the built version from the ./build directory
 
 ```js
+//Example in Express.js
+
 app.get("/", (req, res) => {
 	res.sendFile("./build/index.html");
 });
